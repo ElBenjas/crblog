@@ -1,10 +1,10 @@
-<h1>Aquí podemos ver a detalle cada Post</h1>
-<h2>Cada Post es identificado por su ID</h2>
-
-<p>
+<h1>
   <%= @post.title %>
-</p>
+</h1>
 
 <p>
   <%= @post.body %>
+</p>
+<p>
+  <%= link_to 'Editar', edit_post_path %> | <%= link_to 'Eliminar', @post, method: :delete, data: { confirm: "¿Estás seguro?"} %>
 </p>

@@ -34,7 +34,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @driver.destroy
+    @post.destroy
     redirect_to root_path
   end
 
