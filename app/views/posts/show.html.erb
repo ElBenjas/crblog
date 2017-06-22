@@ -3,7 +3,7 @@
 </h1>
 
 <p>
-  <%= @post.body %>
+  <%= @post.body.html_safe %>
 </p>
 <p>
   <%= link_to 'Editar', edit_post_path %> | <%= link_to 'Eliminar', @post, method: :delete, data: { confirm: "¿Estás seguro?"} %>

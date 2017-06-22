@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 #Extra gem's installed by myself
+gem 'ckeditor'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'pry-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
