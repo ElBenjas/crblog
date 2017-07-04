@@ -1,4 +1,15 @@
-<% @posts.each do |p| %>
-  <h1><%= link_to p.title, p %></h1>
-  <p><%= p.body.html_safe %></p>
-<% end  %>
+<div class="row">
+  <% @posts.each do |p| %>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-rigth">
+
+      <div class="titulo-post-index">
+        <h3><%= link_to p.title, p %></h3>
+      </div>
+
+      <%= link_to p do %>
+        <%= image_tag("#{p.avatar.url(:cover_index)}", class: "cover-post-index", alt:"Imagen de portada") %>
+      <% end %>
+
+    </div>
+    <% end  %>
+</div>
