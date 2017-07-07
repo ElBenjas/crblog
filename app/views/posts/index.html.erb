@@ -1,6 +1,6 @@
 <div class="row">
   <% @posts.each do |p| %>
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-rigth">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 margin-rigth">
 
       <div class="titulo-post-index">
         <h3><%= link_to p.title, p %></h3>
@@ -13,3 +13,5 @@
     </div>
     <% end  %>
 </div>
+
+<%= will_paginate @posts %>
